@@ -22,4 +22,6 @@ Let's assume the simple measure that is amenable to RL application (i.e. additiv
 
 $$ \mathbb{J}(\theta) = E \left( \sum_{t=1}^T r_{p,t} \right) = E \left( \sum_{t=1}^T \sum_{i=1}^N (f_i(x_{t-1};\theta) r_{i,t} - \vert f_i(x_t;\theta)-f_i(x_{t-1};\theta) \vert c_i) \right) $$
 
-where the summation is over $T$-length return paths.
+where the summation is over $T$-length return paths and $f_i$ is the $i^{th}$ component of $f$.
+
+In SGD framework, we can replace the expectation with sample average and in RL (Robins-Monro) setting, with a single path of length $T$.
