@@ -17,3 +17,9 @@ When short-selling is not allowed, we impose constraints on weights at each time
 
 ## Optimization
 The key idea is to parametrize $w_t$ with some function i.e. $w_t = f(x_t; \theta)$, where $x_t$ is some "feature" vector (e.g. past returns of assets) and $\theta$ are parameters of the function (e.g. weights of a MLP).
+
+Let's assume the simple measure that is amenable to RL application (i.e. additive): total return over a given horizon. Let the investment horizon be $T$ periods. Then we would like to solve
+
+$$ \theta^* = \argmax E \sum_{t=1}^T r_{p,t} $$
+
+where the summation is over $T$-length return paths.
