@@ -24,4 +24,4 @@ $$ \mathbb{J}(\theta) = E \left( \sum_{t=1}^T r_{p,t} \right) = E \left( \sum_{t
 
 where the summation is over $T$-length return paths and $f_i$ is the $i^{th}$ component of $f$.
 
-In SGD framework, we can replace the expectation with sample average and in RL (Robins-Monro) setting, with a single path of length $T$.
+In SGD framework, we can replace the expectation with sample average and in RL (Robins-Monro) setting, with a single path of length $T$ .
