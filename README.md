@@ -11,8 +11,9 @@ where $r_{i,t} = \frac{P_{i,t}}{P_{i,t-1}} - 1$ is one period return and $c_i$ i
 
 Equivalently, one period return of this strategy can be stated as
 
-$$ \sum_{i=1}^N (w_{i,t-1} r_{i,t} - \vert w_{i,t}-w_{i,t-1} \vert c_i) $$
+$$ r_{p,t} = \sum_{i=1}^N (w_{i,t-1} r_{i,t} - \vert w_{i,t}-w_{i,t-1} \vert c_i) $$
 
 When short-selling is not allowed, we impose constraints on weights at each time $t$: $w_{i,t}\geq 0$ and $\sum_i w_{i,t} = 1$.
 
+## Optimization
 The key idea is to parametrize $w_t$ with some function i.e. $w_t = f(x_t; \theta)$, where $x_t$ is some "feature" vector (e.g. past returns of assets) and $\theta$ are parameters of the function (e.g. weights of a MLP).
