@@ -20,6 +20,6 @@ The key idea is to parametrize $w_t$ with some function i.e. $w_t = f(x_t; \thet
 
 Let's assume the simple measure that is amenable to RL application (i.e. additive): total return over a given horizon. Let the investment horizon be $T$ periods. Then we would like to solve
 
-$$ \theta^* = \argmax E \sum_{t=1}^T r_{p,t} $$
+$$ \theta^* = \arg\max E \sum_{t=1}^T r_{p,t} $$
 
 where the summation is over $T$-length return paths.
