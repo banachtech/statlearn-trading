@@ -41,7 +41,7 @@ $$B_t = \delta R_t^2 + (1-\delta) B_{t-1}$$
 
 where $A_0 = 0, B_0=0$. Then,
 
-$$ \mathbb{J}_t = A_t - \frac{\gamma}{2} (B_t-A_t^2) $$
+$$\mathbb{J}_t = A_t - \frac{\gamma}{2} (B_t-A_t^2) $$
 
 It can be shown that
 
