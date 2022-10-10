@@ -1,4 +1,4 @@
-# ML/RL Applications in Finance
+# Learning Trading Strategies
 
 ## Introduction
 This repository has examples of optimal design of trading strategies using (offline) machine learning and reinforcement-learning techniques.
