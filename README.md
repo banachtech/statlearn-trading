@@ -39,8 +39,14 @@ MVO is not additive in the sense of $G_t = G_{t-1} + r_t$. However, we can appro
 $$A_t = \delta R_t + (1-\delta) A_{t-1}$$
 $$B_t = \delta R_t^2 + (1-\delta) B_{t-1}$$
 
-where $A_0 = 0, B_0=0$.
+where $A_0 = 0, B_0=0$. Then,
 
-$$ \mathbb{J}_t = A - \frac{\gamma}{2} (B-A^2) $$
+$$ \mathbb{J}_t = A_t - \frac{\gamma}{2} (B_t-A_t^2) $$
 
+It can be shown that
 
+$$ \mathbb{J}_t \approx \mathbb{J}_{t-1} + \Delta A_t - \frac{\gamma}{2} (\Delta B_t - 2A_t\Delta A_t)$$
+
+where, $\Delta A_t = R_t - A_{t-1}$ and $\Delta B_t = R_t^2 - B_{t-1}$.
+
+This enables us to run standard RL algorithms with $\Delta A_t - \frac{\gamma}{2} (\Delta B_t - 2A_t\Delta A_t)$ as reward for action taken at time $t$.
