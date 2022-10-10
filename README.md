@@ -45,7 +45,7 @@ $$ \mathbb{J}_t = A_t - \frac{\gamma}{2} (B_t-A_t^2) $$
 
 It can be shown that
 
-$$ \mathbb{J}_t \approx \mathbb{J}_{t-1} + \Delta A_t - \frac{\gamma}{2} (\Delta B_t - 2A_t\Delta A_t)$$
+$$\mathbb{J}_t \approx \mathbb{J}_{t-1} + \Delta A_t - \frac{\gamma}{2} (\Delta B_t - 2A_t\Delta A_t)$$
 
 where, $\Delta A_t = R_t - A_{t-1}$ and $\Delta B_t = R_t^2 - B_{t-1}$.
 
