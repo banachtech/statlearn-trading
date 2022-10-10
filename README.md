@@ -32,7 +32,7 @@ The notebook _total-return-example.ipynb_ has an implementation of this framewor
 ### ML Example - Mean Variance Objective
 Total return objective, although useful in RL setting due to its linear, additive nature, ignores risk of the trading strategy. Mean-Variance utility, a popular performance measure in finance, balances risk and return. Here, variance of returns is the measure of risk. The objective function can be written as
 
-$$ $$ \mathbb{J}(\theta) = \text{E}(r_{p,t}) - \frac{\gamma}{2} \text{Var}(r_{p,t}) $$
+$$ \mathbb{J}(\theta) = \text{E}(r_{p,t}) - \frac{\gamma}{2} \text{Var}(r_{p,t}) $$
 
 
 
